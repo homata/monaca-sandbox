@@ -1,0 +1,73 @@
+{
+    "top" : {
+        "container" : "toolbar",
+        "style" : {
+            "title" : "UI Demo"
+        },
+        "left": [
+            {
+                "component": "button",
+                "style": {
+                        "text": "Button A"
+                },
+                "event": {
+                    "onTap": "alert('Button A Tapped');"
+                }
+            }
+        ],
+        "right": [
+            {
+                "component": "button",
+                "style": {
+                        "text": "Next Page"
+                },
+                "event": {
+                    "onTap": "if (confirm('Go to next page?')) monaca.pushPage('page2.html');"
+                }
+            }
+        ]
+    },
+    "bottom": {
+        "container" : "toolbar",
+        "style" : {
+            "backgroundColor" : "#334466",
+            "iosBarStyle" : "UIBarStyleBlackTranslucent"
+        },
+        "left": [
+            {
+                "component": "button",
+                "style": {
+                        "text": "camera",
+                        "backgroundColor" : "#999999"
+                },
+                "event": {
+                    "onTap": "addTodoPicture();"
+                }
+            },
+            {
+                "component": "button",
+                "style": {
+                        "text": "Button 2"
+                },
+                "event": {
+                    "onTap": "alert('Button 2 Tapped');"
+                }
+            }
+        ],
+        "right": [
+            {
+                "component": "button",
+                "style": {
+                        "text": "Button 3"
+                },
+                "event": {
+                    "onTap": "alert('Button 3 Tapped');"
+                }
+            }
+        ]
+    },
+    "event" : {
+        "onTapBackButton" : "alert('Android Back button was pressed!'); monaca.popPage();"
+    }
+}
+
