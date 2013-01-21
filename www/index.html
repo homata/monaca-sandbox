@@ -10,48 +10,44 @@
 </head>
 
 <body>
-<div id="container">
-  <div class="item" ><p class="image"><img src="./images/images_00.jpg"></p><p class="caption">images_00</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_01.jpg"></p><p class="caption">images_01</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_02.jpg"></p><p class="caption">images_02</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_03.jpg"></p><p class="caption">images_03</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_04.jpg"></p><p class="caption">images_04</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_05.jpg"></p><p class="caption">images_05</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_06.jpg"></p><p class="caption">images_06</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_07.jpg"></p><p class="caption">images_07</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_08.jpg"></p><p class="caption">images_08</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_09.jpg"></p><p class="caption">images_09</p></div>
-
-  <div class="item" ><p class="image"><img src="./images/images_10.jpg"></p><p class="caption">images_10</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_11.jpg"></p><p class="caption">images_11</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_12.jpg"></p><p class="caption">images_12</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_13.jpg"></p><p class="caption">images_13</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_14.jpg"></p><p class="caption">images_14</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_15.jpg"></p><p class="caption">images_15</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_16.jpg"></p><p class="caption">images_16</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_17.jpg"></p><p class="caption">images_17</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_18.jpg"></p><p class="caption">images_18</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_19.jpg"></p><p class="caption">images_19</p></div>
-
-  <div class="item" ><p class="image"><img src="./images/images_20.jpg"></p><p class="caption">images_20</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_21.jpg"></p><p class="caption">images_21</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_22.jpg"></p><p class="caption">images_22</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_23.jpg"></p><p class="caption">images_23</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_24.jpg"></p><p class="caption">images_24</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_25.jpg"></p><p class="caption">images_25</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_26.jpg"></p><p class="caption">images_26</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_27.jpg"></p><p class="caption">images_27</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_28.jpg"></p><p class="caption">images_28</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_29.jpg"></p><p class="caption">images_29</p></div>
-
-  <div class="item" ><p class="image"><img src="./images/images_30.jpg"></p><p class="caption">images_30</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_31.jpg"></p><p class="caption">images_31</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_32.jpg"></p><p class="caption">images_32</p></div>
-  <div class="item" ><p class="image"><img src="./images/images_33.jpg"></p><p class="caption">images_33</p></div>
+  <div data-role="page" id="list-page">
+<!--
+    <div data-role="header" data-position="fixed">
+      <h1>Monaca TODO</h1>
+      <a href= "#add-page"  data-icon="add" class="ui-btn-right">Add</a>
+    </div>
+-->
+    <div data-role="content">
+<!--
+      <ul data-role="listview" data-inset="true" id="todo-list"></ul>
+-->
+      <div id="container">
+        <div class="item"></div>
+      </div>
+<!--
+    <div data-role="footer" class="ui-bar">
+	  <a href="#add-page" data-role="button" data-icon="plus"  data-position=“fixed”>Add</a>
+    </div>
+-->
+    </div>
+  </div>
 
 </div>
+  
+  <div data-role="page" id="add-page">
+    <div data-role="header">
+      <h1>Add TODO</h1>
+    </div>
+    <div data-role="content">
+      <input id="todo-title" type="text" placeholder="TODO Title">
+<!--
+      <textarea id="todo-body" style="height: 8em" placeholder="Description"></textarea>
+      <input id="add-button" type="button" value="Save" onclick="addTodo()">
+-->
+      <input id="add-button" type="button" value="Picture And Save" onclick="addTodoPicture()"  data-theme="b">
+    </div>
+  </div>
 
-
-
+    
 </body>
 </html>
